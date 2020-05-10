@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="stil.css">
+    
+    <title>Login Sayfası</title>
+    <style>
+        body
+        {
+            background-color:#efeee8;
+            background-image: url("loginarkaplan.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+       
+
+        }
+        .button5
+        {
+            -webkit-transition-duration: 0.4s; /* vurgunun süresini yrlıyor */
+   
+             transition-duration: 0.4s;
+             font-size: 18px;
+             padding: 14px 30px;
+             border-radius: 6px;
+             float: right;
+        }
+        .button5:hover
+        {
+            background-color: silver;
+   
+            color: white;
+        }
+        .sidebar
+        {
+            position:fixed;
+            top:0;
+            left:0;
+            width:400px;
+            height:100%;
+            background-color:#fff;
+        }
+        .title
+        {
+            font-weight:700;
+            font-size:40px;
+            text-align:center;
+
+        }
+        .login-form
+        {
+            display:table;
+            margin:auto;
+        }
+        .form-group
+        {
+            margin-bottom:10px;
+        }
+        .form-control
+        {
+            width:300px;
+            padding:10px;
+            color:#1a1a1a;
+            border-radius:3px;
+            border:1px solid #ccc;
+        }
+        .btn
+        {
+            background-color:#3557ff;
+            color:#fff;
+            cursor: pointer;
+            font-weight:700;
+            font-size:16px;
+            width:150px;
+            height:50px;
+            border-radius:3px;
+            border:none;
+        }
+        .form-control:focus
+        {
+            border:1px solid #3557ff;
+        }
+        .button-anasayfa1
+        {
+            float:right;
+            -webkit-transition-duration: 0.4s; /* vurgunun süresini yrlıyor */
+   
+             transition-duration: 0.4s;
+             font-size: 18px;
+             padding: 14px 30px;
+             border-radius: 6px;
+        }
+        .button-anasayfa1:hover
+        {
+            background-color: silver;
+   
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <div class="col-12 btn-group-vertical btn-group-" ;>
+           
+            
+            <button class="button-anasayfa1" onClick="location.href='index.html'">Ana Sayfa</button>
+            <button class="button5"onClick="location.href='iletişim.html'">Iletisim</button>
+            <button class="button5"onClick="location.href='login.html'">Login</button>
+            <button class="button5" onClick="location.href='Mirasımız.html'">Mirasimiz</button>
+            <button class="button5"onClick="location.href='özgeçmiş.html'">Ozgecmis</button>
+            <button class="button5"onClick="location.href='şehrim.html'">Sehrim</button>
+            
+        </div>
+   
+        <div class="sidebar">
+            <h2 class=title>GIRIS Yap</h2>
+            <form action="loginkontrol.php" method="POST" >
+                <div class="login-form">
+                    <small>   E-mail</small>
+                    <div class="form-group">
+                        <input class="form-control"type="text" name="email">
+                    </div>
+                    <small>   SIFRE</small>
+                    <div class="form-group">
+                        <input class="form-control" type="Şifre" name="sifre">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn">Giris</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+                   
+           
+</body>
+</html>
